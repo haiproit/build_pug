@@ -1,0 +1,28 @@
+{
+    "extends": "stylelint-config-wordpress/scss",
+    "plugins": ["stylelint-order"],
+    "rules": {
+        "indentation": 4,
+        "max-line-length": 170,
+        "unit-allowed-list": ["em", "rem", "px", "%", "s", "ms", "deg", "vh", "vw"],
+        "declaration-property-unit-whitelist": null,
+        "selector-class-pattern": null,
+        "no-descending-specificity": null,
+        "number-leading-zero": "never",
+        "function-url-quotes": ["always", {}],
+        "rule-empty-line-before": [
+            "always-multi-line", {
+                "except": ["after-single-line-comment", "first-nested"]
+            }
+        ],
+        "media-feature-name-no-unknown": [
+            true, {
+                "ignoreMediaFeatureNames": ["/^min-/"]
+            }
+        ],
+        "at-rule-empty-line-before": ["never", {
+            "except": ["first-nested"],
+            "ignore": ["inside-block"]
+        }]
+    }
+}

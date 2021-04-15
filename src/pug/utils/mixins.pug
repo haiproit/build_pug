@@ -1,0 +1,12 @@
+mixin img(src, alt, className)
+    - alt = alt || ""
+    - className = className || ""
+    img.img-fluid(src="/assets/images/"+src alt!=alt class=className)
+
+mixin picture(filePC, fileSP, alt, media)
+    - fileSP = fileSP || filePC
+    - alt = alt || ""
+    - media = media || "992px"
+    picture
+        source(media="(min-width: "+media+")" srcset="/assets/images/"+filePC)
+        img.img-fluid(src="/assets/images/"+fileSP alt!=alt)

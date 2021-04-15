@@ -1,0 +1,20 @@
+$image-path: "/assets/images/";
+$fonts-path: "/assets/fonts/";
+//fonts
+@import "../base/typography";
+@import "../base/color";
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+//$grid-breakpoints: (
+//    xs: 0,
+//    sm: 576px,
+//    md: 768px,
+//    lg: 992px,
+//    xl: 1200px,
+//    xxl: 1600px,
+//    xxxl: 1800px
+//);
